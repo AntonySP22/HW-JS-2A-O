@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 2 de Scope</title>
+</head>
+<body>
+	<h3>Ejercicio 2 de Scope</h3>
+	<script type="text/javascript">
+		var miNombre = "Elmer"
+
+		function nombre() {
+		 	var miApellido = "Cruz";
+		 	console.Log(miNombre + " " + miApellido);
+		 } 
+
+		 nombre ();
+		 miNombre
+		 miApellido
+
+		 console.Log(nombre2)
+		 var nombre2 = "Antony"
+
+		 var nombre2 = undefined;
+		 console.Log(nombre2)
+
+		 hey();
+		 function hey () {
+		 	console.Log("Hola" + nombre3);
+		 }
+		 var nombre3 = "Daniel";
+
+		 function hey(){
+		 	console.Log("Hola " + miNombre);
+		 }
+		 var miNombre = undefined;
+		 
+		 hey();
+		 var miNombre = "Adan"; 
+	</script>
+
+</body>
+</html>

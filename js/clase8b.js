@@ -1,13 +1,33 @@
-var promedio = parseFloat(prompt("Digite su promedio"));
-
-if (promedio >= 0 && promedio <= 10) {
-    document.write("Esta en el rango correcto de 0 a 10")
-    document.write("<br>")
-    if (promedio >= 8) {
-        document.write("Usted esta APROBADO con una nota de ", promedio);
-    } else {
-        document.write("Usted esta REPROBADO con una nota de ", promedio);
-    }
-} else {
-    document.write("Esta fuera del rango del 0 a 10")
+const gato = {
+    nombre: 'Valiente',
+    duerme: true,
+    edad: 10,
+    enemigos: ["agua","perros"]
 }
+
+console.log(gato.hasOwnProperty("nombre"))
+console.log(gato.hasOwnProperty("salud"))
+
+console.log("---------------------------")
+
+//Objetos animados
+const gato1 = {
+    nombre: 'Valiente',
+    duerme: true,
+    edad: 10,
+    enemigos: ["agua","perros"],
+    otros: {
+        amigos: ["Cobarde","Timido","Pegajoso"],
+        favoritos: {
+            comida:{
+                fria: "Salmón",
+                caliente: "Pollo"
+            }
+        }
+    }
+}
+
+console.log(gato1.otros.amigos[0])
+console.log(gato1.otros.favoritos.comida.fria)
+
+console.log("---------------------------")
